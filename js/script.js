@@ -25,7 +25,6 @@ fetch('js/libros.json')
     .catch(err => console.error("Error cargando libros:", err));
 
 
-// Formulario (fake)
 const form = document.getElementById('contactForm');
 if (form) {
     form.addEventListener('submit', e => {
