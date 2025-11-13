@@ -3,102 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <title>Librería Simple</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background: #f4f4f4;
-        }
-        header {
-            background: #3f51b5;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        .libros {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .card {
-            background: white;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-            text-align: center;
-        }
-        .card img {
-            max-width: 100%;
-            border-radius: 5px;
-        }
-        footer {
-            margin-top: 30px;
-            text-align: center;
-            color: #555;
-        }
-    </style>
+    <title>Librería Online Premium</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
-    <h1>Librería Online</h1>
+    <h1>Librería Online Premium</h1>
+    <nav>
+        <ul>
+            <li><a href="#libros">Libros</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
 </header>
 
-<section class="libros">
-    <div class="card">
-        <img src="https://via.placeholder.com/150" alt="Libro 1">
-        <h3>Libro 1</h3>
-        <p>Una breve descripción del libro.</p>
-    </div>
+<section id="libros" class="libros">
+    <!-- Tarjetas generadas dinámicamente -->
+</section>
 
-    <div class="card">
-        <img src="https://via.placeholder.com/150" alt="Libro 2">
-        <h3>Libro 2</h3>
-        <p>Una breve descripción del libro.</p>
-    </div>
+<section id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos una librería online dedicada a ofrecer los mejores libros, desde clásicos hasta novedades internacionales, con descripciones detalladas, autores y reseñas.</p>
+</section>
 
-    <div class="card">
-        <img src="https://via.placeholder.com/150" alt="Libro 3">
-        <h3>Libro 3</h3>
-        <p>Una breve descripción del libro.</p>
-    </div>
+<section id="contacto">
+    <h2>Contacto</h2>
+    <form id="contactForm">
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
 </section>
 
 <footer>
-    <p>© 2025 Librería Simple</p>
+    <p>© 2025 Librería Online Premium. Todos los derechos reservados.</p>
 </footer>
 
-=======
-    <title>Películas</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <h1>Mi Cine</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Estrenos</a></li>
-                <li><a href="#">Top</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="movies-container" id="movies-container">
-            <!-- Las películas se insertarán aquí con JS -->
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Mi Cine</p>
-    </footer>
-
-    <script src="js/script.js"></script>
->>>>>>> f72e333446aa6430aad6c665f52de58b0f79a0c4
+<script src="js/script.js"></script>
 </body>
 </html>
