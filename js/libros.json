@@ -1,35 +1,52 @@
-{
-    "libros": [
-      {
-        "titulo": "El Principito",
-        "descripcion": "Una historia encantadora sobre la infancia y la imaginación.",
-        "detalles": "Autor: Antoine de Saint-Exupéry. Publicado en 1943. Género: Fábula.",
-        "imagen": "img/9b110d178ee16fe26c3549048459d29c.jpg"
-      },
-      {
-        "titulo": "1984",
-        "descripcion": "Una novela distópica sobre un régimen totalitario.",
-        "detalles": "Autor: George Orwell. Publicado en 1949. Género: Distopía.",
-        "imagen": "https://via.placeholder.com/250x350"
-      },
-      {
-        "titulo": "Cien Años de Soledad",
-        "descripcion": "Una obra maestra del realismo mágico.",
-        "detalles": "Autor: Gabriel García Márquez. Publicado en 1967. Género: Realismo mágico.",
-        "imagen": "https://via.placeholder.com/250x350"
-      },
-      {
-        "titulo": "Don Quijote de la Mancha",
-        "descripcion": "La novela más famosa de la literatura española.",
-        "detalles": "Autor: Miguel de Cervantes. Publicado en 1605. Género: Novela clásica.",
-        "imagen": "https://via.placeholder.com/250x350"
-      },
-      {
-        "titulo": "La Odisea",
-        "descripcion": "El épico viaje de Odiseo para regresar a Ítaca.",
-        "detalles": "Autor: Homero. Publicado: siglo VIII a.C. Género: Épica.",
-        "imagen": "https://via.placeholder.com/250x350"
-      }
-    ]
-  }
-  
+[
+    {
+        "titulo": "El Conjuro",
+        "descripcion": "Basada en hechos reales, llena de suspenso y horror.",
+        "imagen": "img/libro1.jpg"
+    },
+    {
+        "titulo": "It",
+        "descripcion": "El payaso Pennywise hace su regreso aterrador.",
+        "imagen": "img/libro2.jpg"
+    },
+    {
+        "titulo": "La Monja",
+        "descripcion": "Una presencia demoníaca aterroriza un convento.",
+        "imagen": "img/libro3.jpg"
+    },
+    {
+        "titulo": "Toy Story",
+        "descripcion": "Los juguetes cobran vida cuando nadie los ve.",
+        "imagen": "img/libro4.jpg"
+    },
+    {
+        "titulo": "Shrek",
+        "descripcion": "Un ogro gruñón vive una aventura inolvidable.",
+        "imagen": "img/libro5.jpg"
+    },
+    {
+        "titulo": "Intensamente",
+        "descripcion": "Las emociones cobran vida dentro de la mente.",
+        "imagen": "img/libro6.jpg"
+    },
+    {
+        "titulo": "Avengers Endgame",
+        "descripcion": "La batalla final contra Thanos.",
+        "imagen": "img/libro7.jpg"
+    },
+    {
+        "titulo": "John Wick",
+        "descripcion": "El legendario asesino regresa por venganza.",
+        "imagen": "img/libro8.jpg"
+    },
+    {
+        "titulo": "Mad Max Fury Road",
+        "descripcion": "Un mundo postapocalíptico caótico y brutal.",
+        "imagen": "img/libro9.jpg"
+    },
+    {
+        "titulo": "Avatar",
+        "descripcion": "Una aventura visual en el mundo de Pandora.",
+        "imagen": "img/libro10.jpg"
+    }
+]
