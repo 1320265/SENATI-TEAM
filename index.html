@@ -1,53 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Librería Online Premium</title>
+    <meta charset="UTF-8">
+    <title>Librería Oscura</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/estilo.css">
+    <!-- CORREGIDO -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<!-- 🔥 HERO: Imagen gigante de fondo que cambia -->
-<header id="hero">
-    <!-- // Título dentro de la imagen gigante -->
-    <h1>Librería Online Premium</h1>
-</header>
+    <!-- ======================================================================================
+         MENÚ SUPERIOR
+    ====================================================================================== -->
+    <nav>
+        <ul>
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#libros">Libros</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#premium">Premium</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
 
-<!-- 🔥 MENÚ SUPERIOR -->
-<nav>
-    <ul>
-        <li><a href="#libros">Libros</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-    </ul>
-</nav>
+    <!-- ======================================================================================
+         HERO (IMAGEN GRANDE QUE CAMBIA)
+    ====================================================================================== -->
+    <header id="hero">
+        Bienvenido a la Librería
+    </header>
 
-<!-- 🔥 CONTENEDOR DE TARJETAS (JS las genera) -->
-<section id="libros" class="libros">
-    <!-- // Las tarjetas se agregan con JavaScript -->
-</section>
+    <!-- ======================================================================================
+         LISTA DE LIBROS
+    ====================================================================================== -->
+    <section id="libros"></section>
 
-<!-- 🔥 SECCIÓN NOSOTROS -->
-<section id="nosotros">
-    <h2>Sobre Nosotros</h2>
-    <p>Somos una librería onlin  e dedicada a ofrecer los mejores libros, desde clásicos hasta novedades internacionales.</p>
-</section>
+    <!-- ======================================================================================
+         NOSOTROS
+    ====================================================================================== -->
+    <section id="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>
+            Somos una librería digital enfocada en ofrecer contenido visual y audiovisual.
+            Nuestra misión es ofrecer entretenimiento de calidad en un formato accesible,
+            elegante y moderno.
+        </p>
+    </section>
 
-<section id="contacto">
-    <h2>Suscríbete</h2>
-    <p>Recibe novedades, ofertas exclusivas y recomendaciones de lectura.</p>
+    <!-- ======================================================================================
+         SUSCRIPCIÓN PREMIUM
+    ====================================================================================== -->
+    <section id="premium">
+        <h2>Suscripción Premium</h2>
 
-    <form id="contactForm">
-        <input type="email" placeholder="Tu correo electrónico" required>
-        <button type="submit">Suscribirme</button>
-    </form>
-</section>
+        <div class="premium-box">
+            <h3>Accede a beneficios exclusivos</h3>
 
+            <ul>
+                <li>✔ Acceso ilimitado a todo el catálogo</li>
+                <li>✔ Nuevos títulos cada semana</li>
+                <li>✔ Contenido exclusivo Premium</li>
+                <li>✔ Zero anuncios</li>
+                <li>✔ Soporte prioritario</li>
+            </ul>
 
-<!-- JS -->
-<script src="js/script.js"></script>
+            <button id="btnPremium">Unirse por S/ 12.90</button>
+        </div>
+    </section>
+
+    <!-- ======================================================================================
+         CONTACTO
+    ====================================================================================== -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+
+        <form id="contactForm">
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <textarea placeholder="Escribe tu mensaje" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- ======================================================================================
+         MODAL MÁS INFORMACIÓN
+    ====================================================================================== -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="cerrarModal" class="cerrar">&times;</span>
+            <h2 id="modalTitulo"></h2>
+            <img id="modalImagen" src="" alt="">
+            <p id="modalDescripcion"></p>
+        </div>
+    </div>
+
+    <!-- CORREGIDO -->
+    <script src="js/script.js"></script>
 </body>
 </html>
