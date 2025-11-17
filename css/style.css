@@ -1,174 +1,173 @@
-/* ======================================================================================
-   ESTILO GENERAL (TU MISMO CÓDIGO)
-====================================================================================== */
-
-* { margin:0; padding:0; box-sizing:border-box; }
-
 body {
-    background: #0c0f13;
-    color: #e6e6e6;
-    font-family: "Segoe UI", Arial, sans-serif;
-}
-
-/* HERO */
-#hero {
-    height: 75vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1a1a1a;
     color: white;
-    font-size: 3rem;
-    font-weight: bold;
-    text-shadow: 0 3px 10px rgba(0,0,0,0.7);
-    transition: background-image 1s ease-in-out;
 }
 
 /* NAV */
 nav {
-    background: #11151a;
-    padding: 10px 0;
+    background: #111;
+    padding: 15px;
+    text-align: center;
 }
+
 nav ul {
-    display: flex;
-    gap: 20px;
     list-style: none;
-    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
 nav a {
-    color: #e6eefc;
+    color: #fff;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 18px;
 }
-nav a:hover { background: rgba(30,136,229,0.12); }
+
+/* HERO */
+#hero {
+    height: 450px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+/* BUSCADOR */
+#buscador {
+    text-align: center;
+    margin: 25px 0;
+}
+
+#searchInput {
+    width: 60%;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
 
 /* LIBROS */
 #libros {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 28px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
     padding: 40px;
 }
 
 .card {
-    background: #14181f;
-    padding: 12px;
-    border-radius: 12px;
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
     text-align: center;
-    box-shadow: 0 8px 28px rgba(0,0,0,0.45);
+    transition: transform .3s;
 }
+
+.card:hover {
+    transform: scale(1.05);
+}
+
 .card img {
     width: 100%;
-    height: 250px;
+    height: 300px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 10px;
 }
+
 .card button {
-    margin-top: 6px;
-    padding: 8px 14px;
-    background: #1976d2;
+    background: #4CAF50;
     border: none;
-    border-radius: 8px;
-    color: white;
-}
-
-/* SECCIONES */
-#nosotros, #contacto, #premium {
-    background: #0f1418;
-    margin: 30px;
-    padding: 22px;
-    border-radius: 12px;
-    box-shadow: 0 6px 25px rgba(0,0,0,0.4);
-}
-#nosotros h2, #contacto h2, #premium h2 {
-    text-align: center;
-    color: #8fb7ff;
-    margin-bottom: 16px;
-}
-
-/* FORMULARIO */
-#contactForm {
-    max-width: 600px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-#contactForm input, #contactForm textarea {
     padding: 10px;
-    background: #0b0f13;
-    border: 1px solid #243244;
-    border-radius: 8px;
+    margin-top: 10px;
     color: white;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 6px;
 }
 
-/* ======================================================================================
-   PREMIUM (NUEVO)
-====================================================================================== */
+.card button:hover {
+    background: #45a049;
+}
+
+/* PREMIUM */
+#premium {
+    padding: 50px;
+    text-align: center;
+}
 
 .premium-box {
-    background: #151b22;
-    padding: 20px;
-    border-radius: 12px;
-    max-width: 600px;
+    background: #222;
+    padding: 30px;
+    border-radius: 10px;
+    width: 60%;
     margin: auto;
+}
+
+/* CONTACTO */
+#contacto {
+    padding: 40px;
     text-align: center;
-    box-shadow: 0 0px 20px rgba(0,0,0,0.5);
 }
 
-.premium-box ul {
-    margin: 20px 0;
-    list-style: none;
-}
-.premium-box li {
-    margin: 10px 0;
-    font-size: 1rem;
+#contacto form {
+    width: 60%;
+    margin: auto;
 }
 
-#btnPremium {
-    padding: 10px 20px;
-    background: #1976d2;
+#contacto input,
+#contacto textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background: #333;
     border: none;
     color: white;
-    border-radius: 10px;
+    border-radius: 6px;
+}
+
+#contacto button {
+    padding: 12px 25px;
+    background: #4CAF50;
+    border: none;
+    color: white;
     cursor: pointer;
-}
-#btnPremium:hover {
-    background: #42a5f5;
+    border-radius: 6px;
 }
 
-/* ======================================================================================
-   MODAL (NUEVO)
-====================================================================================== */
+#contacto button:hover {
+    background: #45a049;
+}
 
+/* MODAL */
 .modal {
     display: none;
     position: fixed;
-    z-index: 99999;
     inset: 0;
-    background: rgba(0,0,0,0.75);
+    background: rgba(0,0,0,0.8);
     justify-content: center;
     align-items: center;
 }
 
 .modal-content {
-    background: #1a1f27;
+    background: #222;
     padding: 20px;
-    width: 90%;
-    max-width: 450px;
-    border-radius: 12px;
+    border-radius: 10px;
+    width: 60%;
     text-align: center;
-}
-
-.modal img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 15px;
 }
 
 .cerrar {
     float: right;
-    font-size: 28px;
+    font-size: 30px;
     cursor: pointer;
 }
